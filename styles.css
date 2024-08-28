@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: url('./images/background.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 80%;
+  height: 50%;
+    background-color: rgb(255, 255, 255);
+   padding-bottom: 0px;
+   box-shadow: 3px 5px 15px rgb(171, 135, 152);
+}
+
+.text-container {
+    padding: 7rem;
+}
+
+#were {
+    color: rgb(191, 115, 162);
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+    margin-bottom: 1.5rem
+}
+
+.text-container p {
+    line-height: 1.5rem;
+    font-size: 17px;
+    margin-bottom: 1.5rem;
+    color: rgb(143, 87, 122);;
+}
+
+.img-container {
+    margin-bottom: 0;
+    line-height: 0;
+}
+img {
+    height: 40rem;
+    object-fit:contain;
+}
+
+#email {
+    padding: 0.7rem 0.9rem 0.6rem;
+    border-radius: 2rem;
+    font-size: 17px;
+    width: 80%;
+    border: 1.5px solid rgb(172, 167, 170);
+}
+
+.signup-submit {
+    padding: 0.4rem;
+    width: 5rem;
+    position: absolute;
+    left: 35%;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, hsl(330, 85%, 87%), hsl(322, 81%, 75%));
+    border:none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-submit:hover {
+    background-image: none;
+    background-color: hsl(321, 100%, 90%);
+    box-shadow: 3px 5px 15px rgb(171, 135, 152);
+}
+
+.attribution {
+    margin-top: 1.5rem;
+}
