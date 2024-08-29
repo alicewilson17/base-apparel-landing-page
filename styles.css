@@ -14,21 +14,24 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-  width: 80%;
-  height: 50%;
+  width: 90%;
+  max-width: 1200px;
     background-color: rgb(255, 255, 255);
-   padding-bottom: 0px;
    box-shadow: 3px 5px 15px rgb(171, 135, 152);
+   flex-wrap: wrap;
 }
 
 .text-container {
-    padding: 7rem;
+    padding: 4rem;
+    flex: 1;
+    min-width: 300px;
 }
 
 #were {
@@ -37,7 +40,7 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
     font-weight: 600;
@@ -47,7 +50,7 @@ h1 {
 
 .text-container p {
     line-height: 1.5rem;
-    font-size: 17px;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     color: rgb(143, 87, 122);;
 }
@@ -55,37 +58,66 @@ h1 {
 .img-container {
     margin-bottom: 0;
     line-height: 0;
+    flex:1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
 }
 img {
-    height: 40rem;
+    max-width: 100%;
+    height: auto;
     object-fit:contain;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1)
 }
 
 #email {
     padding: 0.7rem 0.9rem 0.6rem;
     border-radius: 2rem;
-    font-size: 17px;
+    font-size: 1rem;
     width: 80%;
     border: 1.5px solid rgb(172, 167, 170);
+}
+
+#email.green-border {
+    border: 1.5px solid rgb(70, 230, 70);
+}
+
+#email.red-border {
+    border:1.5px solid red;
+}
+
+form.hidden{
+    display:none;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1rem;
 }
 
 .signup-submit {
     padding: 0.4rem;
     width: 5rem;
-    position: absolute;
-    left: 35%;
     border-radius: 2rem;
     background-image: linear-gradient(to right, hsl(330, 85%, 87%), hsl(322, 81%, 75%));
     border:none;
-    font-size: 30px;
+    font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 .signup-submit:hover {
     background-image: none;
     background-color: hsl(321, 100%, 90%);
     box-shadow: 3px 5px 15px rgb(171, 135, 152);
+}
+
+#successMessage {
+    color:hsl(0, 6%, 24%);
+    font-weight: 600;
 }
 
 .attribution {
